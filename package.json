@@ -4,14 +4,17 @@
   "description": "This is broker application automation using Cypress",
   "main": "index.js",
   "scripts": {
-    "opencypress":"./node_modules/.bin/cypress open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "opencypress": "./node_modules/.bin/cypress open",
+    "runloginFeature": ""
   },
   "dependencies": {
     "cypress": "8.3.1",
     "cypress-file-upload": "5.0.8",
     "cypress-cucumber-preprocessor": "4.2.0",
     "cypress-xpath": "1.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "repository": {
     "type": "git",
